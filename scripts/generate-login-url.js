@@ -16,7 +16,7 @@ async function getScratchOrgLoginUrl() {
         if (stderr) throw new Error(stderr);
         const response = JSON.parse(stdout);
         const { url } = response.result;
-        console.log(`Command returned with response: ${url}`);
+        console.log(` : ${url}`);
         return url;
     } catch (err) {
         throw err;
